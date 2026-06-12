@@ -9,12 +9,13 @@ import { IoCloseOutline } from "react-icons/io5";
 import { CiLogout } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
 import { TbActivityHeartbeat } from "react-icons/tb";
+import { CiCalendar } from "react-icons/ci";
 
 const Sidebar = ({ activePage, onPageChange }) => {
   const navLinks = [
     { name: "Dashboard", icon: <RiDashboardLine size={20} /> },
     { name: "Patient Registration", icon: <RxPeople size={20} /> },
-    { name: "Appointments", icon: <FaRegCalendarAlt size={20} /> },
+    { name: "Appointments", icon: <CiCalendar size={20} /> },
     { name: "Queue Management", icon: <LuClipboardList size={20} /> },
     { name: "Billing", icon: <FiDollarSign size={20} /> },
   ];
@@ -63,7 +64,7 @@ const Sidebar = ({ activePage, onPageChange }) => {
         </div>
         
         <button className="btn btn-light d-flex align-items-center justify-content-center gap-2 w-100 logout-btn mt-4 border rounded">
-          <CiLogout size={20} strokeWidth={0.5} style={{ transform: "scaleX(-1)" }} />
+          <CiLogout size={16} strokeWidth={0.5} style={{ transform: "scaleX(-1)" }} />
           <span>Logout</span>
         </button>
       </div>

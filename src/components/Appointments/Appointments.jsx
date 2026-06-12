@@ -10,14 +10,13 @@ const Appointments = () => {
         <p className="text-muted small">Book and manage patient appointments</p>
       </div>
 
-      <div className="row g-4">
-        {/* Left Column - Form */}
+      <div>
         <div className="col-lg-8">
-          <div className="bg-white border rounded-16 p-4 p-md-5 shadow-sm h-100">
+          <div>
             <h5 className="fw-bold text-dark mb-4 pb-2">Schedule New Appointment</h5>
             
             <form>
-              <div className="row g-4 mb-4">
+              <div>
                 <div className="col-md-6">
                   <label className="form-label text-muted small mb-2 fw-medium">Patient</label>
                   <input type="text" className="form-control shadow-none border-light-grey rounded-3 py-2" placeholder="Search patient..." />
@@ -46,7 +45,7 @@ const Appointments = () => {
                 </div>
               </div>
 
-              <div className="mb-4 pb-2">
+              <div>
                 <label className="form-label text-muted small mb-2 fw-medium">Notes</label>
                 <textarea className="form-control shadow-none border-light-grey rounded-3 py-2" rows="3" placeholder="Additional notes or patient concerns..."></textarea>
               </div>
@@ -58,13 +57,11 @@ const Appointments = () => {
           </div>
         </div>
 
-        {/* Right Column - Availability */}
-        <div className="col-lg-4">
-          <div className="bg-white border rounded-16 p-4 shadow-sm h-100">
+        <div>
+          <div>
             <h5 className="fw-bold text-dark mb-4 pb-2">Doctor Availability</h5>
             
-            <div className="d-flex flex-column gap-3">
-              {/* Doctor 1 */}
+            <div className="d-flex flex-column gap-3 col-md-4">
               <div className="rounded-3 p-3 transition-all hover-bg-light" style={{ backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', cursor: 'pointer' }}>
                 <div className="d-flex align-items-center gap-2 mb-2">
                   <div className="rounded-circle" style={{ width: '6px', height: '6px', backgroundColor: '#22c55e' }}></div>
@@ -76,7 +73,6 @@ const Appointments = () => {
                 </div>
               </div>
 
-              {/* Doctor 2 */}
               <div className="rounded-3 p-3 transition-all hover-bg-light" style={{ backgroundColor: '#fff7ed', border: '1px solid #fed7aa', cursor: 'pointer' }}>
                 <div className="d-flex align-items-center gap-2 mb-2">
                   <div className="rounded-circle" style={{ width: '6px', height: '6px', backgroundColor: '#f97316' }}></div>
@@ -88,7 +84,6 @@ const Appointments = () => {
                 </div>
               </div>
 
-              {/* Doctor 3 */}
               <div className="rounded-3 p-3 transition-all hover-bg-light" style={{ backgroundColor: '#fef2f2', border: '1px solid #fecaca', cursor: 'pointer' }}>
                 <div className="d-flex align-items-center gap-2 mb-2">
                   <div className="rounded-circle" style={{ width: '6px', height: '6px', backgroundColor: '#ef4444' }}></div>
