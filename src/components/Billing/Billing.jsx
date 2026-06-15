@@ -44,8 +44,8 @@ const Billing = () => {
         </p>
       </div>
 
-      <div>
-        <div>
+      <div className="d-flex gap-4">
+        <div className="col-md-8 bg-white py-4 px-4 rounded-16">
           <div>
             <h5 className="fw-bold text-dark mb-4 pb-2">New Bill</h5>
 
@@ -230,7 +230,7 @@ const Billing = () => {
           </div>
         </div>
 
-        <div>
+        <div className="col-md-4 bg-white" style={{width: "50vh"}}>
           <div className="p-4 h-100">
             <h5 className="fw-bold text-dark mb-4 pb-2">Quick Services</h5>
 
@@ -243,8 +243,7 @@ const Billing = () => {
                   disabled
                   className="btn text-start"
                   style={{
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e5e7eb",
+                    border: "0px solid #e5e7eb",
                     borderRadius: "8px",
                     color: "#64748b",
                     opacity: 1,
@@ -263,8 +262,7 @@ const Billing = () => {
                   disabled
                   className="btn text-start"
                   style={{
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e5e7eb",
+                    border: "0px solid #e5e7eb",
                     borderRadius: "8px",
                     color: "#64748b",
                     opacity: 1,
@@ -283,8 +281,7 @@ const Billing = () => {
                   disabled
                   className="btn text-start"
                   style={{
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e5e7eb",
+                    border: "0px solid #e5e7eb",
                     borderRadius: "8px",
                     color: "#64748b",
                     opacity: 1,
@@ -303,8 +300,7 @@ const Billing = () => {
                   disabled
                   className="btn text-start"
                   style={{
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e5e7eb",
+                    border: "0px solid #e5e7eb",
                     borderRadius: "8px",
                     color: "#64748b",
                     opacity: 1,

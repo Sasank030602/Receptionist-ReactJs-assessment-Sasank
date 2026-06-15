@@ -65,23 +65,23 @@ const PatientRegistration = () => {
     e.preventDefault();
 
     const currentCount = JSON.parse(
-      localStorage.getItem("new_registrations_count") || "12"
+      localStorage.getItem("new_registrations_count") || "12",
     );
 
     localStorage.setItem(
       "new_registrations_count",
-      JSON.stringify(currentCount + 1)
+      JSON.stringify(currentCount + 1),
     );
 
     alert(
-      "Patient registered successfully! Check the Dashboard for updated New Registrations count."
+      "Patient registered successfully! Check the Dashboard for updated New Registrations count.",
     );
 
     e.target.reset();
   };
 
   const renderNewPatientForm = () => (
-    <div>
+    <div className="border rounded-16 my-4 px-4 py-4 bg-white">
       <h5 className="fw-bold text-dark mb-1">New Patient Registration</h5>
       <p className="text-muted small">
         Enter patient details to create a new record
@@ -91,7 +91,7 @@ const PatientRegistration = () => {
         <h6 className="fw-bold">Personal Information</h6>
         <hr />
 
-        <div>
+        <div className="row">
           <div className="col-md-5">
             <label className="form-label small">Full Name *</label>
             <input className="form-control" type="text" required />
@@ -116,7 +116,7 @@ const PatientRegistration = () => {
         <h6 className="fw-bold">Contact Information</h6>
         <hr />
 
-        <div>
+        <div className="row">
           <div className="col-md-6">
             <label className="form-label small d-flex align-items-center gap-2">
               <FiPhone /> Phone Number *
@@ -154,7 +154,7 @@ const PatientRegistration = () => {
         <h6 className="fw-bold">Address & Emergency Contact</h6>
         <hr />
 
-        <div>
+        <div className="row">
           <div className="col-md-6">
             <label className="form-label small d-flex align-items-center gap-2">
               <FiMapPin /> Address
@@ -173,7 +173,11 @@ const PatientRegistration = () => {
         <hr />
 
         <div className="d-flex gap-3 mt-4">
-          <button className="btn btn-primary d-flex align-items-center gap-2" type="submit" style={{background: "#00A6F4"}}>
+          <button
+            className="btn d-flex align-items-center gap-2"
+            type="submit"
+            style={{ background: "#00A6F4", color: "#ffffff" }}
+          >
             <FiCheckCircle /> Register
           </button>
 
@@ -181,7 +185,10 @@ const PatientRegistration = () => {
             Clear
           </button>
 
-          <button className="btn btn-link text-muted text-decoration-none" type="button">
+          <button
+            className="btn btn-link text-muted text-decoration-none"
+            type="button"
+          >
             <PiIdentificationCard size={18} /> Scan Aadhaar
           </button>
         </div>
@@ -190,7 +197,7 @@ const PatientRegistration = () => {
   );
 
   const renderReturningPatients = () => (
-    <div>
+    <div className="border rounded-16 my-4 px-4 py-4 bg-white">
       <h5 className="fw-bold text-dark mb-1">Find Returning Patient</h5>
       <p className="text-muted small mb-4">
         Search by name, phone, email, or ID
@@ -212,23 +219,31 @@ const PatientRegistration = () => {
         {PATIENTS.map((pt) => (
           <div
             key={pt.id}
-            className="rounded-3 p-3 d-flex justify-content-between align-items-center"
+            className="rounded-3 p-3 d-flex border justify-content-between align-items-center"
           >
-            <div>
+            <div className="wi">
               <div className="fw-bold">
-                {pt.name} <span className="text-muted small">{pt.id}</span> <span className="text-dark fs-5">{pt.bg}</span>
+                {pt.name} <span className="text-muted small">{pt.id}</span>{" "}
+                <span className="text-dark fs-5">{pt.bg}</span>
               </div>
-              <div className="small text-muted">
-                <FiPhone /> {pt.phone}
+              <div className="four d-flex">
+                <div className="small text-muted">
+                  <FiPhone /> {pt.phone}
+                </div>
+                <div className="small text-muted">
+                  <FiMail /> {pt.email}
+                </div>
+                <div className="small text-muted">Age: {pt.age}</div>
+                <div className="small text-muted">Last Visit: {pt.visit}</div>
               </div>
-              <div className="small text-muted">
-                <FiMail /> {pt.email}
-              </div>
-              <div className="small">{pt.age}</div>
-              <div className="small">Last Visit: {pt.visit}</div>
             </div>
 
-            <button className="btn btn-primary btn-sm">Select Patient</button>
+            <button
+              className="btn btn-sm"
+              style={{ background: "#00A6F4", color: "#ffffff" }}
+            >
+              Select Patient
+            </button>
           </div>
         ))}
       </div>
@@ -244,18 +259,22 @@ const PatientRegistration = () => {
         </p>
       </div>
 
-      <div className="d-flex mb-4">
+      <div
+        className="d-flex mb-4 border bg-white py-2 px-2 shadow-sm rounded-16"
+        style={{ maxWidth: "45vh", gap: "30px" }}
+      >
         <button
-          className={`btn ${activeTab === "new" ? "btn-primary" : "btn-light"}`}
-          style={{background: "#00A6F4"}}
+          className={`btn ${activeTab === "new" ? "btn-primary" : "btn-white"}`}
           onClick={() => setActiveTab("new")}
+          style={{borderRadius: "10px"}}
         >
           <FiUserPlus /> New Patient
         </button>
 
         <button
-          className={`btn ${activeTab === "returning" ? "btn-primary" : "btn-light"}`}
+          className={`btn ${activeTab === "returning" ? "btn-primary" : "btn-white"}`}
           onClick={() => setActiveTab("returning")}
+          style={{borderRadius: "10px"}}
         >
           <FiSearch /> Returning Patient
         </button>

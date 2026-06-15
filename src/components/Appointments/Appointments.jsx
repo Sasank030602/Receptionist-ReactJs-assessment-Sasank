@@ -4,19 +4,19 @@ import "../../App.css";
 
 const Appointments = () => {
   return (
-    <div className="w-100 dashboard-content">
+    <div className="dashboard-content ">
       <div className="mb-4 pb-2">
         <h3 className="fw-bold text-dark mb-1">Appointment Scheduling</h3>
         <p className="text-muted small">Book and manage patient appointments</p>
       </div>
 
-      <div>
+      <div className='d-flex stat-card gap-2'>
         <div className="col-lg-8">
-          <div>
+          <div className="bg-white border py-4 px-4 rounded-16 shadow-sm">
             <h5 className="fw-bold text-dark mb-4 pb-2">Schedule New Appointment</h5>
             
             <form>
-              <div>
+              <div className="row">
                 <div className="col-md-6">
                   <label className="form-label text-muted small mb-2 fw-medium">Patient</label>
                   <input type="text" className="form-control shadow-none border-light-grey rounded-3 py-2" placeholder="Search patient..." />
@@ -58,10 +58,10 @@ const Appointments = () => {
         </div>
 
         <div>
-          <div>
-            <h5 className="fw-bold text-dark mb-4 pb-2">Doctor Availability</h5>
+          <div className="w bg-white pt-4 pb-5 mx-4 px-4 border rounded-16 shadow-sm" style={{width: "50vh"}}>
+            <h5 className="fw-bold text-dark mb-4 ">Doctor Availability</h5>
             
-            <div className="d-flex flex-column gap-3 col-md-4">
+            <div className="d-flex flex-column gap-3">
               <div className="rounded-3 p-3 transition-all hover-bg-light" style={{ backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', cursor: 'pointer' }}>
                 <div className="d-flex align-items-center gap-2 mb-2">
                   <div className="rounded-circle" style={{ width: '6px', height: '6px', backgroundColor: '#22c55e' }}></div>

@@ -10,7 +10,7 @@ const QueueManagement = () => {
           <p className="text-muted small mb-0">Real-time patient queue and token system</p>
         </div>
         <div className="d-flex align-items-center gap-3">
-          <span className="badge rounded-pill fw-medium" style={{color: "#00A6F4", fontSize:16}}>
+          <span className="badge rounded-pill fw-medium" style={{color: "#00A6F4", fontSize:16, backgroundColor: "#DBEAFE", color: "#1447E6"}}>
             1 in queue
           </span>
           <button className="btn text-white px-4 py-2 shadow-sm" style={{ backgroundColor: '#00A6F4', borderRadius: '8px', fontWeight: '500' }}>
@@ -20,11 +20,11 @@ const QueueManagement = () => {
       </div>
 
       <div className="row">
-        <div className="col-md-6">
-          <div className="bg-white rounded-16 p-4">
+        <div className="col-md-4">
+          <div className="bg-white border rounded-16 p-4 shadow-sm">
             <div className="d-flex justify-content-between align-items-center mb-4">
               <h2 className="mb-0 fw-normal" style={{ color: '#00A6F4', fontSize: '32px' }}>#3</h2>
-              <span className="badge-waiting rounded-pill fw-medium text-lowercase" style={{ padding: '4px 14px', fontSize: '14px', letterSpacing: '0.3px' }}>
+              <span className="badge-waiting rounded-pill fw-medium text-lowercase" style={{ padding: '4px 14px', fontSize: '14px', letterSpacing: '0.3px', backgroundColor: "#FEF9C2", color: "#AD6C10" }}>
                 waiting
               </span>
             </div>

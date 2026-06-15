@@ -37,11 +37,14 @@ const Sidebar = ({ activePage, onPageChange }) => {
       <div className="sidebar-nav flex-grow-1">
         <div className="nav flex-column position-relative">
           {navLinks.map((link, idx) => (
-            <a 
-              href="#" 
+            <a
+              href="#"
               key={idx}
-              className={`nav-link d-flex align-items-center gap-3 ${activePage === idx ? 'active' : ''}`}
-              onClick={(e) => { e.preventDefault(); onPageChange(idx); }}
+              className={`nav-link d-flex align-items-center gap-3 ${activePage === idx ? "active" : ""}`}
+              onClick={(e) => {
+                e.preventDefault();
+                onPageChange(idx);
+              }}
             >
               {link.icon}
               <span className="nav-text">{link.name}</span>
@@ -54,7 +57,10 @@ const Sidebar = ({ activePage, onPageChange }) => {
       {/* Footer */}
       <div className="sidebar-footer">
         <div className="user-info d-flex align-items-center gap-3">
-          <div className="user-avatar flex-shrink-0" style={{ marginBottom: 0 }}>
+          <div
+            className="user-avatar flex-shrink-0"
+            style={{ marginBottom: 0 }}
+          >
             <FaRegUserCircle size={24} color="rgba(255, 255, 255, 0.8)" />
           </div>
           <div className="d-flex flex-column text-start">
@@ -62,9 +68,13 @@ const Sidebar = ({ activePage, onPageChange }) => {
             <span className="user-role">Receptionist</span>
           </div>
         </div>
-        
+
         <button className="btn btn-light d-flex align-items-center justify-content-center gap-2 w-100 logout-btn mt-4 border rounded">
-          <CiLogout size={16} strokeWidth={0.5} style={{ transform: "scaleX(-1)" }} />
+          <CiLogout
+            size={16}
+            strokeWidth={0.5}
+            style={{ transform: "scaleX(-1)" }}
+          />
           <span>Logout</span>
         </button>
       </div>

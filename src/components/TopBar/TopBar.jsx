@@ -7,7 +7,7 @@ import "../../App.css";
 
 const TopBar = () => {
   return (
-    <div className="topbar-container d-flex justify-content-between align-items-center bg-white px-4 py-2 border-bottom w-100">
+    <div className="topbar-container d-flex justify-content-between align-items-center bg-white px-4 py-3 border-bottom w-100">
       <div className="search-wrapper position-relative">
         <IoSearchOutline className="search-icon text-muted" size={20} />
         <input 
