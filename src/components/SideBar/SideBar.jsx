@@ -22,7 +22,6 @@ const Sidebar = ({ activePage, onPageChange }) => {
 
   return (
     <div className="sidebar-container bg-white d-flex flex-column shadow-sm">
-      {/* Header */}
       <div className="sidebar-header d-flex justify-content-between align-items-center">
         <div className="d-flex align-items-center gap-2">
           <div className="logo-icon">
@@ -33,7 +32,6 @@ const Sidebar = ({ activePage, onPageChange }) => {
         <IoCloseOutline size={20} className="text-muted cursor-pointer" />
       </div>
 
-      {/* Navigation */}
       <div className="sidebar-nav flex-grow-1">
         <div className="nav flex-column position-relative">
           {navLinks.map((link, idx) => (
@@ -54,7 +52,6 @@ const Sidebar = ({ activePage, onPageChange }) => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="sidebar-footer">
         <div className="user-info d-flex align-items-center gap-3">
           <div
