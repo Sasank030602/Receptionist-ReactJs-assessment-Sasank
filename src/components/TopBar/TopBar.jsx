@@ -1,7 +1,5 @@
-import React from 'react';
 import { IoSearchOutline } from "react-icons/io5";
 import { FiHome } from "react-icons/fi";
-import { VscBell } from "react-icons/vsc";
 import { LuBell } from "react-icons/lu";
 import "../../App.css";
 

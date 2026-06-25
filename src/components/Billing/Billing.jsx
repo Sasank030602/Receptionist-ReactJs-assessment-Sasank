@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../App.css";
 
 const createEmptyItem = () => ({
@@ -10,10 +10,6 @@ const createEmptyItem = () => ({
 
 const Billing = () => {
   const [items, setItems] = useState([createEmptyItem()]);
-
-  const handleAddItem = () => {
-    setItems([...items, createEmptyItem()]);
-  };
 
   const handleItemChange = (id, field, value) => {
     setItems(

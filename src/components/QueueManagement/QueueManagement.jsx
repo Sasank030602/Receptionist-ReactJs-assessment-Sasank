@@ -1,4 +1,3 @@
-import React from 'react';
 import "../../App.css";
 
 const QueueManagement = () => {
@@ -10,7 +9,7 @@ const QueueManagement = () => {
           <p className="text-muted small mb-0">Real-time patient queue and token system</p>
         </div>
         <div className="d-flex align-items-center gap-3">
-          <span className="badge rounded-pill fw-medium" style={{color: "#00A6F4", fontSize:16, backgroundColor: "#DBEAFE", color: "#1447E6"}}>
+          <span className="badge rounded-pill fw-medium" style={{fontSize:16, backgroundColor: "#DBEAFE", color: "#1447E6"}}>
             1 in queue
           </span>
           <button className="btn text-white px-4 py-2 shadow-sm" style={{ backgroundColor: '#00A6F4', borderRadius: '8px', fontWeight: '500' }}>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/SideBar/SideBar";
 import Topbar from "./components/TopBar/TopBar";

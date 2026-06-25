@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
 import "../../App.css";
 import { RiDashboardLine } from "react-icons/ri";
 import { RxPeople } from "react-icons/rx";
-import { FaRegCalendarAlt } from "react-icons/fa";
 import { LuClipboardList } from "react-icons/lu";
 import { FiDollarSign } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
