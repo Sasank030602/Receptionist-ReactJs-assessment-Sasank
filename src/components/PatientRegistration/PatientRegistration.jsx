@@ -178,11 +178,11 @@ const PatientRegistration = () => {
             type="submit"
             style={{ background: "#00A6F4", color: "#ffffff" }}
           >
-            <FiCheckCircle /> Register
+            <FiCheckCircle /> Register Patient
           </button>
 
           <button className="btn btn-light" type="reset">
-            Clear
+            Clear Form
           </button>
 
           <button

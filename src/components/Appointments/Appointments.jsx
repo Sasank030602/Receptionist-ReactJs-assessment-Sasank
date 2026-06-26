@@ -10,8 +10,8 @@ const Appointments = () => {
       </div>
 
       <div className='d-flex stat-card gap-2'>
-        <div className="col-lg-8">
-          <div className="bg-white border py-4 px-4 rounded-16 shadow-sm">
+        <div className="col-lg-8" style={{display: 'flex', flexDirection: 'column'}}>
+          <div className="bg-white border py-4 px-4 rounded-16 shadow-sm" style={{flexGrow: 1}}>
             <h5 className="fw-bold text-dark mb-4 pb-2">Schedule New Appointment</h5>
             
             <form>
@@ -56,11 +56,11 @@ const Appointments = () => {
           </div>
         </div>
 
-        <div>
-          <div className="w bg-white pt-4 pb-5 mx-4 px-4 border rounded-16 shadow-sm" style={{width: "50vh"}}>
+        <div style={{display: 'flex', flexDirection: 'column', flexGrow: 1}}>
+          <div className="w bg-white pt-4 pb-5 mx-4 px-4 border rounded-16 shadow-sm" style={{width: "50vh", height: "100%", display: "flex", flexDirection: "column", flexGrow: 1}}>
             <h5 className="fw-bold text-dark mb-4 ">Doctor Availability</h5>
             
-            <div className="d-flex flex-column gap-3">
+            <div className="d-flex flex-column gap-3 hide-scrollbar" style={{overflowY: 'auto', flexGrow: 1}}>
               <div className="rounded-3 p-3 transition-all hover-bg-light" style={{ backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', cursor: 'pointer' }}>
                 <div className="d-flex align-items-center gap-2 mb-2">
                   <div className="rounded-circle" style={{ width: '6px', height: '6px', backgroundColor: '#22c55e' }}></div>

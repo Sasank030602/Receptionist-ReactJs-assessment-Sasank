@@ -415,3 +415,11 @@ body {
   border-color: #e2e8f0;
   cursor: not-allowed;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
